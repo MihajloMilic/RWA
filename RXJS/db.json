@@ -1,0 +1,79 @@
+{
+    "teams" : 
+    [
+        {
+            "name":"Partizan",
+            "country":"Srbija"
+        },
+        {
+            "name":"Zvezda",
+            "country":"Srbija"
+        },
+        {
+            "name":"Radnicki",
+            "country":"Srbija"
+        },
+        {
+            "name":"OFK Beograd",
+            "country":"Srbija"
+        },
+        {
+            "name":"Vojvodina",
+            "country":"Srbija"
+        },
+        {
+            "name":"Cukaricki",
+            "country":"Srbija"
+        }
+        
+    ],
+
+    "Matches": 
+    [
+        {
+            "Stadion":"Rajko Mitic",
+            "Team1": {"name":"Partizan",
+                "country":"Srbija"},
+            "Team2": {"name":"Zvezda",
+                "country":"Srbija"},
+            "Score": "0 : 0",
+            "Time" : 90
+        },
+        {
+            "Stadion":"Marakana",
+            "Team1": {"name":"Cukaricki",
+                "country":"Srbija"},
+            "Team2": {"name":"OFK Beograd",
+                "country":"Srbija"},
+                "Score": "0 : 0",
+                "Time" : 90
+        },
+        {
+            "Stadion":"Stadion Karadjorde",
+            "Team1": {"name":"Vojvodina",
+                "country":"Srbija"},
+            "Team2": {"name":"Radnicki",
+                "country":"Srbijaa"},
+                "Score": "0 : 0",
+                "Time" : 90
+        },
+        {
+            "Stadion":"Rajko Mitic",
+            "Team1": {"name":"Partizan",
+                "country":"Srbija"},
+            "Team2": {"name":"Vojvodina",
+                "country":"Srbija"},
+                "Score": "0 : 0",
+                "Time" : 90
+        },
+        {
+            "Stadion":"Rajko Mitic",
+            "Team1": {"name":"Radnicki",
+                "country":"Srbija"},
+            "Team2": {"name":"OFK Beograd",
+                "country":"Srbija"},
+                "Score": "0 : 0",
+                "Time" : 90
+        }
+    ]
+}
