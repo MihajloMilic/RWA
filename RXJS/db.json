@@ -2,27 +2,27 @@
     "teams": [
         {
             "name": "Partizan",
-            "country": "Srbija"
+            "Points": 0
         },
         {
             "name": "Zvezda",
-            "country": "Srbija"
+            "Points": 0
         },
         {
             "name": "Radnicki",
-            "country": "Srbija"
+            "Points": 0
         },
         {
             "name": "OFK Beograd",
-            "country": "Srbija"
+            "Points": 0
         },
         {
             "name": "Vojvodina",
-            "country": "Srbija"
+            "Points": 0
         },
         {
             "name": "Cukaricki",
-            "country": "Srbija"
+            "Points": 0
         }
     ],
     "Matches": [
@@ -38,7 +38,7 @@
             },
             "GoalsTeam1": 0,
             "GoalsTeam2": 0,
-            "Time": 90
+            "Time": 0
         },
         {
             "Stadion": "Marakana",
@@ -52,7 +52,7 @@
             },
             "GoalsTeam1": 0,
             "GoalsTeam2": 0,
-            "Time": 90
+            "Time": 0
         },
         {
             "Stadion": "Stadion Karadjorde",
@@ -66,7 +66,7 @@
             },
             "GoalsTeam1": 0,
             "GoalsTeam2": 0,
-            "Time": 90
+            "Time": 0
         },
         {
             "Stadion": "Rajko Mitic",
@@ -80,7 +80,7 @@
             },
             "GoalsTeam1": 0,
             "GoalsTeam2": 0,
-            "Time": 90
+            "Time": 0
         },
         {
             "Stadion": "Rajko Mitic",
@@ -94,7 +94,7 @@
             },
             "GoalsTeam1": 0,
             "GoalsTeam2": 0,
-            "Time": 90
+            "Time": 0
         }
     ]
 }
