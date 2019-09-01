@@ -5,7 +5,7 @@ import { ajax } from 'rxjs/ajax';
 
 
 
-let interval$ = timer(0, 3698);
+let interval$ = timer(0, Math.random()*10000);
 let time$ = timer(0, 1000);
 let gameEnd$ = timer(90000)
 let matches$ = getMatches();
@@ -187,8 +187,7 @@ function updateScoreTable(match)
     let Tabel = document.getElementById("Scores");
     Tabel.style.border = "3px solid #000"
     Tabel.innerHTML = "";
-    let head = document.createElement("thead")
-    head.style.border = "3px solid #000 collapse"
+
     let row = document.createElement("tr");
     let data = document.createElement("th");
     data.innerHTML = "Team Name";
@@ -198,8 +197,7 @@ function updateScoreTable(match)
     data.innerHTML = "Points";
     data.style.border = "3px solid #000"
     row.appendChild(data);
-    head.appendChild(row)
-    Tabel.appendChild(head);
+    Tabel.appendChild(row);
     match.forEach(el=>{
         let row = document.createElement("tr");
         row.style.border = "3px solid #000"
@@ -213,4 +211,28 @@ function updateScoreTable(match)
         row.appendChild(data);
         Tabel.appendChild(row);
     })
+    sortTable();
 }
+function sortTable() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("Scores");
+    switching = true;
+
+    while (switching) {
+      switching = false;
+      rows = table.rows;
+      for (i = 1; i < (rows.length - 1); i++) {
+        shouldSwitch = false;
+        x = rows[i].cells[1]
+        y = rows[i + 1].cells[1]
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+      if (shouldSwitch) {
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+      }
+    }
+  }
