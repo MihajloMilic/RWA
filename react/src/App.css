@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color:gainsboro;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+
+.mainHeader
+{
+  height: 200px;
+  padding: 20px;
+  margin-top: 50px
+}

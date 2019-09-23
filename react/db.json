@@ -1,0 +1,135 @@
+{
+    "movie":[
+        {
+            "id":1,
+            "name":"Avengers 1",
+            "genery":"Sci-fi",
+            "year":2000,
+            "src":"https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+        },
+        {
+            "id":2,
+            "name":"Avengers 2",
+            "genery":"Sci-fi",
+            "year":2005,
+            "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOTR6RJUy6UOSifXMG7ly0KgchET4mJwOSO5JcMovRGM3yOI09"
+        },
+        {
+            "id":3,
+            "name":"Avengers 3",
+            "genery":"Sci-fi",
+            "year":2010,
+            "src":"https://i.ytimg.com/vi/sjfwzcxa_4o/maxresdefault.jpg"
+        },
+        {
+            "id":4,
+            "name":"Black swan",
+            "genery":"Drama",
+            "year":2000,
+            "src":"https://images-na.ssl-images-amazon.com/images/I/51rHLQQXOvL._SY445_.jpg"
+        },
+        {
+            "id":5,
+            "name":"Truth or dare",
+            "genery":"Horror",
+            "year":2000,
+            "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3cu0LnbkBPvhRxtsyaX_xAmk4WqI8wY1jAnrWWbvtQE0kwAVfQA"
+        },
+        {
+            "id":6,
+            "name":"Kriste",
+            "genery":"Documentery",
+            "year":2000,
+            "src":"https://pbs.twimg.com/profile_images/620787687381839872/dzntF5N4_400x400.jpg"
+        },
+        {
+            "id":7,
+            "name":"Revange",
+            "genery":"Action",
+            "year":2002,
+            "src":"https://upload.wikimedia.org/wikipedia/en/3/36/Revenge_2017_poster.png"
+        },
+        {
+            "id":8,
+            "name":"Hey friend",
+            "genery":"Drama",
+            "year":1998,
+            "src":"https://i.ytimg.com/vi/bcPxST7Wd00/maxresdefault.jpg"
+        },
+        {
+            "id":9,
+            "name":"Ps. I love you",
+            "genery":"Drama",
+            "year":2004,
+            "src":"https://resizing.flixster.com/VViTTU2SYTnw-2H-FK_QvGEp2c0=/206x305/v1.bTsxMTE3MDA0ODtqOzE3ODU5OzEyMDA7ODAwOzEyMDA"
+        },
+        {
+            "id":10,
+            "name":"The house",
+            "genery":"Horror",
+            "year":2015,
+            "src":"https://m.media-amazon.com/images/M/MV5BMTc0NDYwNzU2M15BMl5BanBnXkFtZTgwOTUxNDg0MTI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+        }
+        
+    ],
+    "tvShows":[
+
+        {
+            "id":1,
+            "name":"GOT",
+            "genery":"Sci-fi",
+            "year":2011,
+            "src":"https://resize.indiatvnews.com/en/centered/newbucket/715_431/2017/07/got-1500279769.jpg",
+            "sesons":8
+        },
+        {
+            "id":2,
+            "name":"Walking dead",
+            "genery":"Sci-fi",
+            "year":2008,
+            "src":"https://m.media-amazon.com/images/M/MV5BZTA3OGU2Y2EtYWIxNy00ZThmLWJhNjYtMmU5NDk4ZWI3Yzc3XkEyXkFqcGdeQXVyNDI4MzQ0MzQ@._V1_.jpg",
+            "sesons":7
+        },
+        {
+            "id":3,
+            "name":"Board walking empire",
+            "genery":"Crime",
+            "year":1999,
+            "src":"https://pmcvariety.files.wordpress.com/2012/04/6a00d8341bfc7553ef0168ea5b1a14970c-800wi.jpg",
+            "sesons":5
+        },
+        {
+            "id":4,
+            "name":"American horror story",
+            "genery":"Horror",
+            "year":2007,
+            "src":"https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/American_Horror_Story_Season_5.jpg/220px-American_Horror_Story_Season_5.jpg",
+            "sesons":9
+        },
+        {
+            "id":5,
+            "name":"True detective",
+            "genery":"Crime",
+            "year":1985,
+            "src":"https://pmctvline2.files.wordpress.com/2017/03/true-detective-season-3-update.jpg?w=620",
+            "sesons":2
+        },
+        {
+            "id":6,
+            "name":"Suits",
+            "genery":"Comedy",
+            "year":2007,
+            "src":"https://static.next-episode.net/tv-shows-images/huge/suits.jpg",
+            "sesons":9
+        },
+        {
+            "id":7,
+            "name":"Wire",
+            "genery":"Crime",
+            "year":1997,
+            "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6yMf9FFKZmhoHstLMC2ooEOpvmjDvPYmP02oq6RRLTaFrgiQ",
+            "sesons":4
+        }
+        
+    ]
+}

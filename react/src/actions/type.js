@@ -1,0 +1,32 @@
+export const REQUEST_ALL_MOVIE = 'REQUEST_ALL_MOVIE';
+
+export const REQUEST_BY_NAME_MOVIE = 'REQUEST_BY_NAME_MOVIE';
+
+export const REQUEST_BY_TYPE_MOVIE = 'REQUEST_BY_TYPE_MOVIE';
+
+
+export const REQUEST_SUCCESS = 'REQUEST_SUCCESS';
+
+
+//----------------------
+
+export const ADD_TO_WISH = 'ADD_TO_WISH';
+
+export const DELETE_FROM_WISH = "DELETE_FROM_WISH"
+
+//----------------------
+
+export const REQUEST_ALL_TVSHOWS = 'REQUEST_ALL_TVSHOWS';
+
+
+export const REQUEST_BY_NAME_TVSHOWS = 'REQUEST_BY_NAME_TVSHOWS';
+
+
+export const REQUEST_BY_TYPE_TVSHOWS = 'REQUEST_BY_TYPE_TVSHOWS';
+
+
+export const ADD_TO_WISH_OBJECT = 'ADD_TO_WISH_OBJECT';
+
+
+export const ADD_TO_WISH_OBJECT_REQUEST = 'ADD_TO_WISH_OBJECT_REQUEST';
+

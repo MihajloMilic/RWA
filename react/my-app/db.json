@@ -1,0 +1,21 @@
+{
+    "product":
+[
+    {
+        "id":1,
+        "naziv":"Mleko - Moja Kravica",
+        "cena": 98,
+        "proizvodjac":"Imlek",
+        "opis":"Mleko sa visokim sadzajem proteina",
+        "slika":"https://cenoteka.rs/assets/images/articles/dugotrajno-mleko-imlek-2-8-mm-1l-1001649-large.jpg"
+    },
+    {
+        "id":1,
+        "naziv":"Mlecna Cokolada",
+        "cena": 98,
+        "proizvodjac":"Milka",
+        "opis":"Mlecna cokolada",
+        "slika":"https://www.ediskont.rs/uploads/store/products/images/mlecna_cokolada_milka_80g_387.jpg"
+    }
+]
+}
