@@ -8,13 +8,11 @@ export const REQUEST_BY_TYPE_MOVIE = 'REQUEST_BY_TYPE_MOVIE';
 export const REQUEST_SUCCESS = 'REQUEST_SUCCESS';
 
 
-//----------------------
 
 export const ADD_TO_WISH = 'ADD_TO_WISH';
 
 export const DELETE_FROM_WISH = "DELETE_FROM_WISH"
 
-//----------------------
 
 export const REQUEST_ALL_TVSHOWS = 'REQUEST_ALL_TVSHOWS';
 

@@ -13,7 +13,6 @@ export const MovieRequestGenery = (message) =>({
     message
 })
 
-//----------------------------------------------
 export const MovieRequestAll = () =>({
     type : actionType.REQUEST_ALL_MOVIE,
     
@@ -27,7 +26,7 @@ export const AddToWishList = (Movie) =>(
 )
 
 
-//-----------------------------------
+
 export const DeleteFromWish = (id) =>(
 {
     type: actionType.DELETE_FROM_WISH,

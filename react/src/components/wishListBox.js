@@ -8,8 +8,6 @@ class WishListBox extends Component
     constructor(props)
     {
         super(props);
-       // this.objects = getByIdMovie(this.props.wishList)
-       // console.log(this.objects)
         this.delete = this.delete.bind(this);
         this.props.getByIdMovie(this.props.wishList);
         console.log(this.props.wishList)

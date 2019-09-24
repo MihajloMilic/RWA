@@ -132,7 +132,6 @@ const MapDispatchToProps = dispatch =>({
         nameMovies: (name)=> dispatch(MovieRequestName(name)),
         typeMovies: (genery)=> dispatch(MovieRequestGenery(genery)),
 
-        ///---------ACTION AND REDUCER AND SAGA
         getByIdMovie:(some)=> dispatch(AddToWishListReq(some)),
 
         allTvShows: ()=> dispatch(TvShowRequestAll()),

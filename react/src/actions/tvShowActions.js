@@ -13,14 +13,12 @@ export const TvShowRequestGenery = (message) =>({
     message
 })
 
-//----------------------------------------------
 export const TvShowRequestAll = () =>({
     type : actionType.REQUEST_ALL_TVSHOWS,
     
 })
 
 
-//-----------------------------------
 
 export const TvShowSuccess = (payLoad) =>({
     type: actionType.REQUEST_SUCCESS,
