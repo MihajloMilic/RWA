@@ -13,7 +13,7 @@ export class ResolveBoxTvShow extends Component
                         <p className="ui">Year : {item.year}</p>
                         <p className="ui">Genery : {item.genery}</p>
                         <p className="ui">Sesion : {item.sesons}</p> 
-                        <img src={item.src} height="200px" width="200px"/>
+                        <img src={item.src} alt={item.src} height="200px" width="200px"/>
                     </div>
                 </div>
                 ));

@@ -7,9 +7,7 @@ export function* allMovieSaga(){
     try{
         const movies = yield call(movieService.getAllMovie);
         console.log("saga");
-        yield[
-            put(movieAction.MoviesSuccess(movies))
-        ];
+        yield put(movieAction.MoviesSuccess(movies));
     }
     catch (error){
         yield[
@@ -23,9 +21,7 @@ export function* NameMovieSaga(action){
     try{
         const movies = yield call(movieService.getByNameMovie, action.message);
 
-        yield[
-            put(movieAction.MoviesSuccess(movies))
-        ];
+        yield put(movieAction.MoviesSuccess(movies));
     }
     catch (error){
         yield[
@@ -38,30 +34,25 @@ export function* TypeMovieSaga(action){
     try{
         const movies = yield call(movieService.getByGeneryMovie, action.message);
         console.log(movies)
-        yield[
-            put(movieAction.MoviesSuccess(movies))
-        ];
+        yield put(movieAction.MoviesSuccess(movies));
     }
     catch (error){
-        yield[
-            put({ type: "REQUEST_FAIL", error})
-        ];
+        yield put({ type: "REQUEST_FAIL", error});
     }
 }
 
 
 export function* WishListSaga(action){
     try{
+        console.log("WishListSaga")
+        console.log(action.message)
         const movies = yield call(movieService.getByIdMovie, action.message);
         console.log(movies);
-        yield[
-            put(movieAction.AddToWishListOB(movies))
-        ];
+        yield put(movieAction.AddToWishListOB(movies));
     }
     catch (error){
-        yield[
-            put({ type: "REQUEST_FAIL", error})
-        ];
+        yield put({ type: "REQUEST_FAIL", error});
     }
 }
+
 

@@ -11,5 +11,4 @@ export default function* start() {
     yield fork(watchers.WatchTvShowsName);
     yield fork(watchers.WatchTvShowsType);
     yield fork(watchers.WatchWishListOB);
-    yield fork(watchers.WatchWishListDelete);
 }

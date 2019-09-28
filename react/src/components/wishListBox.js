@@ -1,4 +1,4 @@
-import React, { Component,propTypes } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { DeleteFromWish, AddToWishListReq } from '../actions/movieActions';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -9,27 +9,22 @@ class WishListBox extends Component
     {
         super(props);
         this.delete = this.delete.bind(this);
-        this.props.getByIdMovie(this.props.wishList);
-        console.log(this.props.wishList)
+        this.props.getByIdMovie(this.props.wishList);    
     }
 
     delete(e) 
     {
-        console.log(e.target.name);
-        console.log(this.props.wishList);
-        var a = this.props.DeleteFromWish(e.target.name);
-        console.log("OVO JE ODOGVOR", a)
-        this.props.getByIdMovie(this.props.wishList);
-       
+       this.deleteAsync(e).then( () => this.props.getByIdMovie(this.props.wishList))
     }
 
- 
+    async deleteAsync(e)
+    {
+        await this.props.DeleteFromWish(e.target.name);
+    }
+
     render()
     {
-        console.log(this.props.mold); 
-        
         const merge3 = this.props.wishListOb.flat(1);
-        console.log(merge3);
         const renderMovies =  merge3.map(item =>
             (
                 <div className="column" key={item.id}>
@@ -38,7 +33,7 @@ class WishListBox extends Component
                         <p className="ui">Title : {item.name}</p>
                         <p className="ui">Year : {item.year}</p>
                         <p className="ui">Genery : {item.genery}</p> 
-                        <img src={item.src} height="200px" width="200px"/>
+                        <img src={item.src} alt={item.src} height="200px" width="200px"/>
                     </div>
                     <button className="ui red button" name={item.id} onClick={this.delete} >Delete from Wish List</button>
                    
@@ -46,7 +41,9 @@ class WishListBox extends Component
                 ));
         return (
             <div className="resolveBox">
-                <Link to="/">Home</Link>
+                <Link to="/">            
+                    <button className="ui button red" >Home</button>
+                </Link>
                 <div className="ui three column grid">
                     {renderMovies}
                 </div>

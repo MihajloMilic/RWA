@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import mainComponent from "./components/routeComponents/mainComponent"
 import wishListComponent from "./components/routeComponents/wishListComponents"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import  configureStore  from "./store";
 import { createBrowserHistory } from "history";

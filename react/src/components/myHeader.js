@@ -14,8 +14,8 @@ export class MyHeader extends Component{
 
  
 const slideImages = [
-  'https://cdn.pixabay.com/photo/2016/06/15/08/23/tape-1458416__340.png',
-  'https://systweak1.vo.llnwd.net/content/wp/systweakblogsnew/uploads/Movie-Blog.jpg',
+  'https://showlist.io/img/logo-stacked.png',
+  'https://vignette.wikia.nocookie.net/its-showtime/images/d/d4/Logo2017.jpg/revision/latest?cb=20171014150219',
   'https://img.freepik.com/free-vector/cinema-room-background_1017-8728.jpg?size=626&ext=jpg'
 ];
  
@@ -25,9 +25,6 @@ const properties = {
   infinite: true,
   indicators: true,
   arrows: true,
-  onChange: (oldIndex, newIndex) => {
-    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-  }
 }
  
 const Slideshow = () => {

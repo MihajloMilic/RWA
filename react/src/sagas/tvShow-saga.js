@@ -6,14 +6,10 @@ export function* allTvShowSaga(){
     try{
         const tvShows = yield call(tvShowService.getAllShow);
 
-        yield[
-            put(tvShowActions.TvShowSuccess(tvShows))
-        ];
+        yield put(tvShowActions.TvShowSuccess(tvShows));
     }
     catch (error){
-        yield[
-            put({ type: "REQUEST_FAIL", error})
-        ];
+        yield put({ type: "REQUEST_FAIL", error});
     }
 }
 
@@ -22,9 +18,7 @@ export function* NameTvShowSaga(action){
     try{
         const tvShows = yield call(tvShowService.getByNameShow, action.message);
 
-        yield[
-            put(tvShowActions.TvShowSuccess(tvShows))
-        ];
+        yield put(tvShowActions.TvShowSuccess(tvShows));
     }
     catch (error){
         yield[
@@ -37,13 +31,9 @@ export function* TypeTvShowSaga(action){
     try{
         const tvShows = yield call(tvShowService.getByGeneryShow, action.message);
 
-        yield[
-            put(tvShowActions.TvShowSuccess(tvShows))
-        ];
+        yield put(tvShowActions.TvShowSuccess(tvShows));
     }
     catch (error){
-        yield[
-            put({ type: "REQUEST_FAIL", error})
-        ];
+        yield put({ type: "REQUEST_FAIL", error});
     }
 }

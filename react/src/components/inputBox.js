@@ -22,10 +22,6 @@ export class InputBox extends Component
                 <button className="ui button red" name={"btnGenery"+this.props.name} onClick={this.props.onClickBtn}>Find by genres</button>
                 <br/>
                 <br/>
-
-                <button className="ui red button massive" name={"btnGetAll"+this.props.name} onClick={this.props.onClickBtn}>Get all</button>
-                <br/>
-                <br/>
             </div>
         );
 

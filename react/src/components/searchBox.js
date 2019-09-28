@@ -1,8 +1,7 @@
-import React, { Component,propTypes } from 'react';
+import React, { Component } from 'react';
 import { InputBox } from "./inputBox";
 import  ResolveBoxMovie  from "./resolveBoxMovie";
 import { ResolveBoxTvShow } from "./resolveBoxTvShow";
-import WishListBox from './wishListBox';
 import { connect } from 'react-redux';
 import { MovieRequestName,MovieRequestGenery,MovieRequestAll,AddToWishListReq } from '../actions/movieActions';
 import { TvShowRequestName,TvShowRequestGenery,TvShowRequestAll } from "../actions/tvShowActions";
@@ -20,6 +19,7 @@ class SearchBox extends Component
         this.objects = [];
         this.onClickBtn = this.onClickBtn.bind(this);
         this.MovieOrTvShows = this.MovieOrTvShows.bind(this);
+        this.props.allMovies();
     }
    
     onChangeInput(e)
@@ -32,21 +32,18 @@ class SearchBox extends Component
         if(e.target.value === "Movies")
         {
             this.setState({movieState:true});
+            this.props.allMovies();
         }
         else if(e.target.value === "TvShows")
         {
             this.setState({movieState:false});
+            this.props.allTvShows()
         }
     }
     onClickBtn(e)
     {
         switch(e.target.name)
         {
-            case "btnGetAllMovie":
-            {
-                this.props.allMovies();
-                break;
-            }
             case "btnNameMovie":
             {
                 this.props.nameMovies(this.state.nameInput);
@@ -55,11 +52,6 @@ class SearchBox extends Component
             case "btnGeneryMovie":
             {
                 this.props.typeMovies(this.state.generyInput);
-                break;
-            }
-            case "btnGetAllShows":
-            {
-                this.props.allTvShows()
                 break;
             }
             case "btnNameShows":
@@ -72,6 +64,7 @@ class SearchBox extends Component
                 this.props.typeTvShows(this.state.generyInput);
                 break;
             }
+            default:return;
         }
        
     }
@@ -94,7 +87,9 @@ class SearchBox extends Component
         return(
             
             <div className="SearchBox">
-            <Link to="/wishList">Wish List</Link>
+            <Link to="/wishList">
+                <button className="ui button red" >Wish List</button>
+            </Link>
                 <div>
                     <select ref={this.state.movieState} onChange={this.MovieOrTvShows} className="ui search dropdown">
                         <option value="Movies">Movies</option>

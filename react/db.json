@@ -2,45 +2,45 @@
     "movie":[
         {
             "id":1,
-            "name":"Avengers 1",
+            "name":"The Avengers ",
             "genery":"Sci-fi",
-            "year":2000,
-            "src":"https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+            "year":2012,
+            "src":"https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/172347/DIG032949_2._SX1280_QL80_TTD_.jpg"
         },
         {
             "id":2,
-            "name":"Avengers 2",
+            "name":"Avengers: Age of Ultron",
             "genery":"Sci-fi",
-            "year":2005,
-            "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOTR6RJUy6UOSifXMG7ly0KgchET4mJwOSO5JcMovRGM3yOI09"
+            "year":2015,
+            "src":"https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_UY1200_CR90,0,630,1200_AL_.jpg"
         },
         {
             "id":3,
-            "name":"Avengers 3",
+            "name":"Avengers: Infinity War",
             "genery":"Sci-fi",
-            "year":2010,
-            "src":"https://i.ytimg.com/vi/sjfwzcxa_4o/maxresdefault.jpg"
+            "year":2018,
+            "src":"https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg"
         },
         {
             "id":4,
-            "name":"Black swan",
-            "genery":"Drama",
-            "year":2000,
-            "src":"https://images-na.ssl-images-amazon.com/images/I/51rHLQQXOvL._SY445_.jpg"
+            "name":"IT",
+            "genery":"Horror",
+            "year":2017,
+            "src":"https://upload.wikimedia.org/wikipedia/en/5/5a/It_%282017%29_poster.jpg"
         },
         {
             "id":5,
             "name":"Truth or dare",
             "genery":"Horror",
-            "year":2000,
-            "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3cu0LnbkBPvhRxtsyaX_xAmk4WqI8wY1jAnrWWbvtQE0kwAVfQA"
+            "year":2018,
+            "src":"https://m.media-amazon.com/images/M/MV5BOGU2YTZmMjYtZDUwYi00NTc1LTlkMjAtM2ViZDkzOTlhNGNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"
         },
         {
             "id":6,
-            "name":"Kriste",
-            "genery":"Documentery",
-            "year":2000,
-            "src":"https://pbs.twimg.com/profile_images/620787687381839872/dzntF5N4_400x400.jpg"
+            "name":"Avengers: Endgame",
+            "genery":"Sci-fi",
+            "year":2019,
+            "src":"https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg"
         },
         {
             "id":7,
@@ -73,7 +73,6 @@
         
     ],
     "tvShows":[
-
         {
             "id":1,
             "name":"GOT",

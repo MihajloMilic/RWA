@@ -1,4 +1,4 @@
-import { takeLatest } from "redux-saga";
+import { takeLatest } from "redux-saga/effects";
 import * as movieSaga from './movie-saga';
 import * as tvShowSaga from "./tvShow-saga";
 import * as ActionType from "../actions/type"
@@ -16,8 +16,6 @@ export function* WatchMoviesType(){
     yield takeLatest(ActionType.REQUEST_BY_TYPE_MOVIE, movieSaga.TypeMovieSaga);
 }
 
-//----------------------------------------------------------------------------
-
 export function* WatchTvShowsAll(){
     yield takeLatest(ActionType.REQUEST_ALL_TVSHOWS, tvShowSaga.allTvShowSaga);
 }
@@ -31,12 +29,6 @@ export function* WatchTvShowsType(){
     yield takeLatest(ActionType.REQUEST_BY_TYPE_TVSHOWS, tvShowSaga.TypeTvShowSaga);
 }
 
-
 export function* WatchWishListOB(){
     yield takeLatest(ActionType.ADD_TO_WISH_OBJECT_REQUEST, movieSaga.WishListSaga);
-}
-
-
-export function* WatchWishListDelete(){
-    yield takeLatest(ActionType.DELETE_FROM_WISH, movieSaga.WishListSaga);
 }
