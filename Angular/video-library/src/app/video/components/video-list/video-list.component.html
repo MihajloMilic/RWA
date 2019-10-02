@@ -1,0 +1,1 @@
+<video-card *ngFor='let video of videos | async' [video]="video" (selectVideo)="onSelectVideo($event)"></video-card>

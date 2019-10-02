@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular": {
+    "video-library": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular",
+            "outputPath": "dist/video-library",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular:build"
+            "browserTarget": "video-library:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular:build:production"
+              "browserTarget": "video-library:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular:build"
+            "browserTarget": "video-library:build"
           }
         },
         "test": {
@@ -111,15 +111,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular:serve"
+            "devServerTarget": "video-library:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular:serve:production"
+              "devServerTarget": "video-library:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "Angular"
+    }
+  },
+  "defaultProject": "video-library",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

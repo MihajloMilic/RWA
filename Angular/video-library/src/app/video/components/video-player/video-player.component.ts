@@ -1,0 +1,22 @@
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Video } from '../../state/video.model';
+import { Store } from '@ngrx/store';
+
+@Component({
+  selector: 'video-player',
+  templateUrl: './video-player.component.html',
+  styleUrls: ['./video-player.component.css']
+})
+export class VideoPlayerComponent implements OnInit {
+  private video$: Observable<Video>;
+  private video: Video;
+
+  constructor(private store: Store<{videos:{selectedVideo: Video}}>) { }
+
+  ngOnInit() {
+    this.video$ = this.store.select(store => store.videos.selectedVideo);
+    this.video$.subscribe(res => this.video = res)
+  }
+
+}
