@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
   styleUrls: ["./video.component.css"]
 })
 export class VideoComponent implements OnInit {
-  private videos$: Observable<Video[]>;
+  public videos$: Observable<Video[]>;
 
   constructor(private router: Router, private store: Store<{videos: {entities: Video[]}}>) {    
   }

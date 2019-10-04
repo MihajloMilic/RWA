@@ -12,4 +12,7 @@ export class VideoService {
   public loadVideos(): Observable<Video> {
     return this.http.get<Video>(`${this.baseUrl}/videos`);
   }
+  public searchVideos(search:string): Observable<Video>{
+    return this.http.get<Video>(`${this.baseUrl}/videos?q=`+search);
+  }
 }

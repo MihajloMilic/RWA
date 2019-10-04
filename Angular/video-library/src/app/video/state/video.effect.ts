@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
-import { Actions, createEffect, ofType } from "@ngrx/effects";
+import { Actions, createEffect, ofType, Effect } from "@ngrx/effects";
 import { EMPTY } from "rxjs";
-import { map, mergeMap, catchError } from "rxjs/operators";
+import { map, mergeMap, catchError, exhaustMap, switchMap } from "rxjs/operators";
 import { VideoService } from "../services/video.service";
-import { VideoActionTypes } from "./video.actions";
+import { VideoActionTypes, SearchVideo } from "./video.actions";
 
 @Injectable()
 export class VideoEffects {
@@ -20,6 +20,20 @@ export class VideoEffects {
         )
       )
     )
+  );
+  @Effect()
+  searchVideo$ = this.actions$
+  .pipe(
+    ofType<SearchVideo>(VideoActionTypes.SearchVideo),
+    switchMap((action) => {
+      return this.videoService.searchVideos(action.payload).pipe(
+        map(videos => ({
+          type: VideoActionTypes.LoadVideos,
+          payload: { videos }
+        })),
+        catchError(() => EMPTY)
+     ); 
+    }),  
   );
 
   constructor(private actions$: Actions, private videoService: VideoService) {}

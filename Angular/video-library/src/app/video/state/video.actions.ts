@@ -14,7 +14,8 @@ export enum VideoActionTypes {
   DeleteVideo = '[Video] Delete Video',
   DeleteVideos = '[Video] Delete Videos',
   ClearVideos = '[Video] Clear Videos',
-  SelectVideo = '[Video] Select Video'
+  SelectVideo = '[Video] Select Video',
+  SearchVideo = "[Video] Search Video"
 }
 
 export class LoadVideos implements Action {
@@ -84,6 +85,11 @@ export class SelectVideo implements Action {
   constructor(public payload: { video: Video }) {}
 }
 
+export class SearchVideo implements Action {
+  readonly type = VideoActionTypes.SearchVideo
+
+  constructor(public payload:  string) {}
+}
 export type VideoActions =
  LoadVideos
  | AddVideo
@@ -97,3 +103,4 @@ export type VideoActions =
  | ClearVideos
  | LoadVideosApi
  | SelectVideo
+ | SearchVideo

@@ -11,9 +11,11 @@ export class VideoCardComponent implements OnInit {
   @Input() video: Video;
 
   @Output() selectVideo: EventEmitter<Video>;
+  public change : boolean;
   
   constructor(private store: Store<{selectedVideo: Video}>) { 
     this.selectVideo = new EventEmitter();
+    this.change = false;
   }
 
   ngOnInit() {

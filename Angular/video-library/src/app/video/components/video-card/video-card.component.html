@@ -1,1 +1,18 @@
-<div (click)="onSelectVideo()">{{video.id}}</div>
+<header>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</header>
+
+<div>
+        <div class="card" style="width: 18rem;">
+                <img class="card-img-top" *ngif src={{video.image}} alt="Card image cap">
+                <div (mouseover)="change=true" (mouseout)="change=false">
+                        <img *ngIf="!change" class="card-img-top" src={{video.image}} alt="Card image cap" style="width: 287px; height: 200px;">
+                        <img *ngIf="change"class="card-img-top" src={{video.gif}} alt="Card image cap" style="width: 287px; height: 200px;">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{video.name}}</h5>
+                  <p class="card-text">{{video.description}}</p>
+                  <a (click)="onSelectVideo()" class="btn btn-primary">Watch video</a>
+                </div>
+              </div>
+</div>

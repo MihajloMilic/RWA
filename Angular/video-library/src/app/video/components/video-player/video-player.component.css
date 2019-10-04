@@ -1,0 +1,13 @@
+.player
+{
+    text-align: -webkit-match-parent;
+    margin-top: 5%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  .center {
+    width: 800px;
+  }
