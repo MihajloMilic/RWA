@@ -7,7 +7,7 @@ import { ajax } from 'rxjs/ajax';
 
 let interval$ = timer(0, Math.random()*10000);
 let time$ = timer(0, 1000);
-let gameEnd$ = timer(90000)
+let gameEnd$ = timer(10000)
 let matches$ = getMatches();
 let pulledData$ = new Subject();
 let pull$ = new Subject();
@@ -25,13 +25,16 @@ pull$.pipe(takeUntil(gameEnd$)).subscribe(el => reduceTime(el))
 
 pulledData$.pipe(takeUntil(gameEnd$)).subscribe(res => scoreGoal(res));
 let subscribers$ = new Subject()
-let endedMatches = from(zip(matches$, gameEnd$).pipe(map(el => el[0])))
-endedMatches.subscribe(item => filterScores(subscribers$, item))
+let endedMatches$ = from(zip(matches$, gameEnd$).pipe(map(el => el[0])))
+endedMatches$.subscribe(item => filterScores(subscribers$, item))
 let firstTeamWin = subscribers$.pipe(filter(el => el.GoalsTeam1 > el.GoalsTeam2))
 let secoundTeamWin = subscribers$.pipe(filter(el => el.GoalsTeam2 > el.GoalsTeam1))
+endedMatches$.subscribe(el=> {
+    console.log("Ukupno je dato " + el.reduce((acc,value)=>acc+value.GoalsTeam1+value.GoalsTeam2,0)+ " Golova")
+})
 let winners = firstTeamWin.pipe(merge(secoundTeamWin)).subscribe(el => {console.log("Mecevi sa Pobednicima su "); console.log(el)})
 
-zip(endedMatches, teams$).subscribe(el => updateScore(el))
+zip(endedMatches$, teams$).subscribe(el => updateScore(el))
 
 
 
