@@ -8,11 +8,11 @@ export const getAllShow = () =>
 }
 export const getByNameShow = (name) =>
 {
-    return fetch(`${PATH}?name=${name}`)
+    return fetch(`${PATH}?q=${name}`)
     .then(response => response.json())
 }
 export const getByGeneryShow = (genery) =>
 {
-    return fetch(`${PATH}?genery=${genery}`)
+    return fetch(`${PATH}?q=${genery}`)
     .then(response => response.json())
 }
