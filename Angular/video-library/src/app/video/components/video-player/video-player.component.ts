@@ -20,7 +20,6 @@ export class VideoPlayerComponent implements OnInit {
     this.video$.subscribe(res => this.video = res);
   }
   videoURL() {
-    console.log(this.video.video+'?ecver=2')
     return this.sanitizer.bypassSecurityTrustResourceUrl(this.video.video+'?ecver=2');
   }
 
